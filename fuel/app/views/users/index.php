@@ -7,8 +7,8 @@
 			<th>Id</th>
 			<th>Username</th>
 			<th>Email</th>
-			<th>Last login</th>
-			<th>Login hash</th>
+<!-- 			<th>Last login</th>
+			<th>Login hash</th> -->
 			<th>&nbsp;</th>
 		</tr>
 	</thead>
@@ -18,8 +18,8 @@
 			<td><?php echo $item->id; ?></td>
 			<td><?php echo $item->username; ?></td>
 			<td><?php echo $item->email; ?></td>
-			<td><?php echo $item->last_login; ?></td>
-			<td><?php echo $item->login_hash; ?></td>
+<!-- 			<td><?php echo $item->last_login; ?></td>
+			<td><?php echo $item->login_hash; ?></td> -->
 			<td>
 				<div class="btn-toolbar">
 					<div class="btn-group">
@@ -38,3 +38,8 @@
 	<?php echo Html::anchor('users/create', 'Add new User', array('class' => 'btn btn-success')); ?>
 
 </p>
+<p>
+	<?php echo Html::anchor('login/logout', 'Logout', array('class' => 'btn btn-primary')); ?>
+
+</p>
+

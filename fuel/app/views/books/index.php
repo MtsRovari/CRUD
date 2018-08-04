@@ -6,7 +6,7 @@
 		<tr>
 			<th>Id</th>
 			<th>Author</th>
-			<th>Document</th>
+			<th>ISBN</th>
 			<th>Year</th>
 			<th>Pages</th>
 			<th>Price</th>
@@ -21,7 +21,7 @@
 			<td><?php echo $item->document; ?></td>
 			<td><?php echo $item->year; ?></td>
 			<td><?php echo $item->pages; ?></td>
-			<td><?php echo $item->price; ?></td>
+			<td>R$ <?php echo $item->price; ?></td>
 			<td>
 				<div class="btn-toolbar">
 					<div class="btn-group">
@@ -38,5 +38,9 @@
 
 <?php endif; ?><p>
 	<?php echo Html::anchor('books/create', 'Add new Book', array('class' => 'btn btn-success')); ?>
+
+</p>
+<p>
+	<?php echo Html::anchor('login/logout', 'Logout', array('class' => 'btn btn-primary')); ?>
 
 </p>

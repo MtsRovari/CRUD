@@ -8,9 +8,9 @@
 
 		</div>
 		<div class="form-group">
-			<?php echo Form::label('Document', 'document', array('class'=>'control-label')); ?>
+			<?php echo Form::label('ISBN', 'document', array('class'=>'control-label')); ?>
 
-				<?php echo Form::input('document', Input::post('document', isset($book) ? $book->document : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'Document')); ?>
+				<?php echo Form::input('document', Input::post('document', isset($book) ? $book->document : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'ISBN')); ?>
 
 		</div>
 		<div class="form-group">

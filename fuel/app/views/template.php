@@ -11,8 +11,8 @@
 <body>
 	<div class="container">
 		<div class="col-md-12">
-			<a href="/books">Books</a>
-			<a href="/users">Users</a>
+			<a class="btn btn-primary" href="/books">Books</a>
+			<a class="btn btn-primary" href="/users">Users</a>
 		</div>
 		<div class="col-md-12">
 			<h1><?php echo $title; ?></h1>
@@ -34,16 +34,23 @@
 			</div>
 <?php endif; ?>
 		</div>
+		<div class="col-md-3"></div>
 		<div class="col-md-12">
 <?php echo $content; ?>
 		</div>
-		<footer>
-			<p class="pull-right">Page rendered in {exec_time}s using {mem_usage}mb of memory.</p>
-			<p>
-				<a href="http://fuelphp.com">FuelPHP</a> is released under the MIT license.<br>
-				<small>Version: <?php echo e(Fuel::VERSION); ?></small>
-			</p>
-		</footer>
+		<div class="col-md-3"></div>
+<footer class="page-footer font-small blue pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+        </div>   
+    </div>
+    <br>
+    <div class="footer-copyright text-center py-3">© 2018 Copyright: Mateus Rovari<br><br>
+      <a href="https://www.linkedin.com/in/mateus-rovari-80a47714b/">LinkedIn </a>
+      <a href="https://github.com/MtsRovari">| GitHub</a>
+    </div>
+  </footer>
 	</div>
 </body>
 </html>
