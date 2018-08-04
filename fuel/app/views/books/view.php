@@ -4,7 +4,7 @@
 	<strong>Author:</strong>
 	<?php echo $book->author; ?></p>
 <p>
-	<strong>Document:</strong>
+	<strong>ISBN:</strong>
 	<?php echo $book->document; ?></p>
 <p>
 	<strong>Year:</strong>

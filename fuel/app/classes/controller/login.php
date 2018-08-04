@@ -31,7 +31,7 @@ class Controller_Login extends Controller_Template
             }
         }
 
-        $this->template->title = "Auth";
+        $this->template->title = "Login";
         $this->template->content = View::forge('auth/index');
     }
 
