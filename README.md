@@ -1,42 +1,47 @@
-#FuelPHP
+## Exame de Proficiência - Mateus Rovari
 
-* Version: 1.8
-* [Website](http://fuelphp.com/)
-* [Release Documentation](http://docs.fuelphp.com)
-* [Release API browser](http://api.fuelphp.com)
-* [Development branch Documentation](http://dev-docs.fuelphp.com)
-* [Development branch API browser](http://dev-api.fuelphp.com)
-* [Support Forum](http://fuelphp.com/forums) for comments, discussion and community support
+## Descrição
 
-## Description
+Este é um projeto de aplicação web, consiste na criação CRUD de usuários e livros. Com controle de usuários e banco de dados integrado.
+O projeto foi criado a partir do padrão MVC (Model, View, Controller).
 
-FuelPHP is a fast, lightweight PHP 5.3+ framework. In an age where frameworks are a dime a dozen, We believe that FuelPHP will stand out in the crowd.  It will do this by combining all the things you love about the great frameworks out there, while getting rid of the bad.
+## Recursos utilizados
 
-FuelPHP is fully PHP 7 compatible.
+PHP | HTML | CSS | e banco de dados MYSQL.
 
-## More information
+## Ferramentas utilizadas
 
-For more detailed information, see the [development wiki](https://github.com/fuelphp/fuelphp/wiki).
+* Framework FuelPHP;
+* Editor de códigos e editor visual Sublime Text 3.0;
+* Servidor XAMPP;
+* phpmyadmin para administração do MYSQL;
+* GitBash como terminal de comandos.
 
-##Development Team
+## Project Structure
 
-* Harro Verton - Project Manager, Developer ([http://wanwizard.eu/](http://wanwizard.eu/))
-* Steve West - Core Developer, ORM
-* Márk Sági-Kazár - Developer
+### Pasta Model
 
-### Want to join?
+É responsável pela leitura e escrita dos dados e das validações da aplicação.
+* A pasta model e seus derivados são encontrados em Simple-CRUD > fuel > app > classes > model. 
 
-The FuelPHP development team is always looking for new team members, who are willing
-to help lift the framework to the next level, and have the commitment to not only
-produce awesome code, but also great documentation, and support to our users.
+### Pasta Controller
 
-You can not apply for membership. Start by sending in pull-requests, work on outstanding
-feature requests or bugs, and become active in the #fuelphp IRC channel. If your skills
-are up to scratch, we will notice you, and will ask you to become a team member.
+É responsável por receber todas as requisições do usuário, e cada metodo action, é uma página, e controla qual model usar e qual view exibir para o usuário.
+* A pasta controller é encontrada em Simple-CRUD > fuel > app > classes > controller.
 
-### Alumni
+### Pasta View
 
-* Frank de Jonge - Developer ([http://frenky.net/](http://frenky.net/))
-* Jelmer Schreuder - Developer ([http://jelmerschreuder.nl/](http://jelmerschreuder.nl/))
-* Phil Sturgeon - Developer ([http://philsturgeon.co.uk](http://philsturgeon.co.uk))
-* Dan Horrigan - Founder, Developer ([http://dhorrigan.com](http://dhorrigan.com))
+É responsavel em fazer a exibição dos dados apenas, uma camada de interação com o usuário.
+* A pasta view é encontrada em Simple-CRUD > fuel > app > views (dividida em auth, books e users).
+
+### Arquivo database
+
+* O arquivo db.php é encontrado em Simple-CRUD > fuel > app > config > development > db.php
+
+### Para testar o projeto basta apenas 
+
+* Clonar ou fazer o download do repositório na sua máquina;
+* composer install (permissions/setup do projeto);
+* Configurar o banco de dados no arquivo db.php;
+* php oil r migrate para criar as tabelas e estrutura do banco de dados.
+
