@@ -1,5 +1,3 @@
-## Exame de Proficiência - Mateus Rovari
-
 ## Descrição
 
 Este é um projeto de aplicação web, consiste na criação CRUD de usuários e livros. Com controle de usuários e banco de dados integrado.
